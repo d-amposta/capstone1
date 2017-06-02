@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, dt, dd, th, td {
+	font-family: 'Cardo', serif;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.9em;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*nav*/
+nav {
+	background-color: rgb(0,153,153);
+}
+
+.brand-logo {
+	text-shadow: 1px 1px 1px black;
+}
+
+/*banner*/
+.banner-content h2{
+	background: url(banner5.jpg) center;
+	background-size: cover;
+	max-width: 100%;
+	text-align: center;
+	padding: 19% 6% 6% 60%;
+	margin: 0;
+	color: white;
+	font-size: 3em;
+	text-shadow: 1px 1px teal;
+}
+
+.banner-subpage h1 {
+	font-size: 3em;
+	text-align: center;
+}
+
+/*main*/
+main .row {
+	margin: 13px 0;
+}
+
+main {
+    flex: 1 0 auto;
+    position: relative;
+  }
+
+.container-header h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+/*buttons*/
+.button {
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1em;
+}
+
+.right {
+	position: relative;
+	right: 0;
+}
+
+.disabled {
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		max-width: 100%;
+	}
+
+	ul li {
+		display: block;
+	}
+
+	nav ul a {
+		padding: 0 5px;
+	}
+
+	nav .brand-logo {
+		display: none;
+	}
+
+	.banner-content h2 {
+		padding: 19% 5% 6% 5%;
+		font-size: 2em;
+	}
+
+	.banner-subpage {
+		margin: 0 10px;
+	}
+
+	.row .card1,
+	.row .card2 {
+	margin: 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	body {
+		max-width: 100%;
+	}
+
+	nav ul a {
+		display: block;
+		padding: 0 5px;
+	}
+
+	nav .brand-logo {
+		display: none;
+	}
+
+	i.right {
+		margin-left: 5px;
+	}
+
+	.hide-on-med-and-down {
+		display: block !important;
+	}
+
+	.banner-content h2 {
+		padding: 19% 5% 6% 5%;
+		font-size: 2em;
+	}
+
+	.row .card1,
+	.row .card2 {
+	margin: 0;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+	.row .col.card1,
+	.row .col.card2 {
+		margin: 25% 0;
+	}
+}
