@@ -12,42 +12,60 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <!--  -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat" rel="stylesheet">
 </head>
-
 <body>
-	
-			
-	<nav>
-	    <div class="nav-wrapper">
-	    	<a href="#!" class="brand-logo center">Boyd's Anatomy</a>
-	      		<ul class="left hide-on-med-and-down">
-	        		<li><a href="index.html">HOME</a></li>
-	        		<li><a class="dropdown-button" href="#!" data-activates="dropdown1">PICK A TOPIC<i class="material-icons right">arrow_drop_down</i></a>
-	        			<ul id="dropdown1" class="dropdown-content">
-							<li><a href="intro.html">Introduction to Human Anatomy</a></li>
-							<li><a href="#">Tissues, Glands and Membranes</a></li>
-							<li><a href="#">Integumentary System</a></li>
-							<li><a href="#">Musculoskeletal Anatomy</a></li>
-							<li><a href="#">Neuroanatomy</a></li>
-							<li><a href="#">Endocrine System</a></li>
-							<li><a href="#">Cardiovascular System</a></li>
-							<li><a href="#">Respiratory System</a></li>
-							<li><a href="#">Digestive System</a></li>
-							<li><a href="#">Renal System</a></li>
-							<li><a href="#">Reproductive System</a></li>
-							<li><a href="#">Genetics</a></li>
-						</ul>
-	        		</li>
-	        		<li><a href="about.html">ABOUT</a></li>
-	        		<li class="active"><a href="resources.html">RESOURCES</a></li>
-	      		</ul>
-	    </div>
-	</nav>
-
-	<main class="container">
+	<header>
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="introduction-to-human-anatomy-intro.html">Introduction to Human Anatomy</a></li>
+			<li><a href="#">Tissues, Glands and Membranes</a></li>
+			<li><a href="#">Integumentary System</a></li>
+			<li><a href="#">Musculoskeletal Anatomy</a></li>
+			<li><a href="#">Neuroanatomy</a></li>
+			<li><a href="#">Endocrine System</a></li>
+			<li><a href="#">Cardiovascular System</a></li>
+			<li><a href="#">Respiratory System</a></li>
+			<li><a href="#">Digestive System</a></li>
+			<li><a href="#">Renal System</a></li>
+			<li><a href="#">Reproductive System</a></li>
+			<li><a href="#">Genetics</a></li>
+		</ul>
+		<nav>
+		    <div class="nav-wrapper nav-home">
+		      <a href="index.html" class="brand-logo center">Boyd's Anatomy</a>
+		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		      <ul class="left hide-on-med-and-down">
+		        	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">PICK A TOPIC<i class="material-icons right">arrow_drop_down</i></a></li>
+		        	<li><a href="about.html">ABOUT</a></li>
+		        <li><a href="resources.html">RESOURCES</a></li>
+		      </ul>
+		      <ul class="side-nav" id="mobile-demo">
+				<li><a href="introduction-to-human-anatomy-intro.html">Introduction to Human Anatomy</a></li>
+				<li><a href="#">Tissues, Glands and Membranes</a></li>
+				<li><a href="#">Integumentary System</a></li>
+				<li><a href="#">Musculoskeletal Anatomy</a></li>
+				<li><a href="#">Neuroanatomy</a></li>
+				<li><a href="#">Endocrine System</a></li>
+				<li><a href="#">Cardiovascular System</a></li>
+				<li><a href="#">Respiratory System</a></li>
+				<li><a href="#">Digestive System</a></li>
+				<li><a href="#">Renal System</a></li>
+				<li><a href="#">Reproductive System</a></li>
+				<li><a href="#">Genetics</a></li>
+		        <li><a href="about.html">ABOUT</a></li>
+		        <li><a href="resources.html">RESOURCES</a></li>
+		      </ul>
+		    </div>  
+  		</nav>
+		<div class="banner">
+			<div class="banner-content">
+				<h2>Start learning Anatomy today!</h2>	
+			</div>
+		</div>
+	</header>
+	<main class="index-container">
 		<h2>Textbooks</h2>
 		<div class="row">
 			<p>Seeley's Principles of Anatomy and Physiology</p>
@@ -68,19 +86,36 @@
 			</a>
 		</div>
 	</main>
-
-	<footer class="page-footer">
-        <div class="container">
+	<footer>
+          <div class="container">
             <div class="row">
-              	<div class="col l6 s12">
-                	<h5 class="white-text">Boyd's Anatomy</h5>
-                	<p class="grey-text text-lighten-4">Boyd's Anatomy teaches anatomy at the comfort of your browser. It delivers a clean interface so the user can focus on the content.</p>
-              	</div>
+              <div class="col s12 m3 l3">
+                <h5>Boyd's Anatomy</h5>
+                <p>&copy 2017</p>
+              </div>
+              <div class="col s12 m3">
+              	<a href="">Introduction</a>
+              	<a href="">Tissues, Glands and Membranes</a>
+              	<a href="">Integumentary System</a>
+              	<a href="">Musculoskeletal System</a>
+              </div>
+              <div class="col s12 m3">
+              	<a href="">Neuroanatomy</a>
+              	<a href="">Cardiovascular System</a>
+              	<a href="">Respiratory System</a>
+              	<a href="">Endocrine System</a>
+              </div>
+              <div class="col s12 m3">
+              	<a href="">Digestive System</a>
+              	<a href="">Urinary System</a>
+              	<a href="">Reproductive System</a>
+              	<a href="">Genetics</a>
+              </div>
             </div>
-        </div>
+          </div>
     </footer>
-
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      	<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

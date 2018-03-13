@@ -1,0 +1,223 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p,
+dt,
+dd,
+th,
+td {
+	font-family: 'Cardo', serif;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.9em;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*nav*/
+nav {
+	background-color: #009999;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.brand-logo {
+	text-shadow: 1px 1px 1px black;
+}
+
+/*banner*/
+.banner {
+	background:
+	linear-gradient(to right, rgba(64,64,64,0.3), rgba(64,64,64,0.3)),
+	url(../assets/banner5.jpg) center;
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+}
+.banner-content{
+	position: absolute;
+	bottom: 30px;
+	right: 10%;
+	width: 30%;
+	margin: auto;
+}
+
+.banner-content h2 {
+	text-align: right;
+	color: white;
+	font-size: 3em;
+	text-shadow: 1px 1px teal;
+}
+
+.banner-subpage h1 {
+	font-size: 3em;
+	text-align: center;
+}
+
+/*main*/
+main .row {
+	margin: 13px 0;
+}
+
+main {
+    flex: 1 0 auto;
+    position: relative;
+    padding: 30px 0;
+}
+
+.index-container {
+	width: 70%;
+	margin: auto;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.container-header h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+/*buttons*/
+.button {
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1em;
+}
+
+.right {
+	position: relative;
+	right: 0;
+}
+
+.disabled {
+	opacity: 0.6;
+}
+
+/*INTRO*/
+
+.table-container {
+	height: 390px;
+	overflow: auto;
+}
+
+footer {
+	background-color: #009999;
+	padding: 30px 0;
+}
+
+footer h5,
+footer p,
+footer a {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif; 
+}
+
+footer a {
+	display: block;W
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		max-width: 100%;
+	}
+
+	.banner {
+		position: relative;
+	}
+
+	.banner-content{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.banner-content h2 {
+		text-align: center;
+		font-size: 2em;
+	}
+
+	.banner-subpage {
+		margin: 0 10px;
+	}
+
+	.row .card1,
+	.row .card2 {
+	margin: 0;
+	}
+
+	.row .card4 {
+		display: none;
+	}
+
+	footer a {
+		padding: 2.5px 0;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	body {
+		max-width: 100%;
+	}
+
+	nav ul a {
+		display: none;
+	}
+
+	i.right {
+		margin-left: 5px;
+	}
+
+	.hide-on-med-and-down {
+		display: block !important;
+	}
+
+	.banner {
+		height: 30vh;
+	}
+
+	.table-container {
+		margin-bottom: 30px;
+	}
+
+	.side {
+		display: none;
+	}
+
+	.row .card1,
+	.row .card2,{
+	margin: 0;
+	}
+
+	.row .card4 {
+		display: none;
+	}
+}
